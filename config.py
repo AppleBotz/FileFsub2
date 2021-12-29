@@ -19,7 +19,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "partnersange")
+OWNER = os.environ.get("OWNER", "PartnerRoom")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "")
@@ -57,9 +57,9 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
-ADMINS.append(844432220)
-ADMINS.append(1750080384)
+ADMINS.append(2144447234)
+ADMINS.append(5058850419)
+ADMINS.append(2050266793)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
