@@ -7,7 +7,7 @@
     "sharing"
   ],
   "repository": "https://github.com/urgardaddy/fs2",
-  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
+  "logo": "https://telegra.ph/file/57b78e417dfb69822b6f5.png",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Masukan Bot token, Dapatkan dari t.me/BotFather",
