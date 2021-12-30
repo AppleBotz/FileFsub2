@@ -48,7 +48,7 @@ async def channel_post(client: Client, message: Message):
     )
 
     await reply_text.edit(
-        f"<b>Here is your link!! :</b>\n\n{link}",
+        f"<b>Succses Create Link :\n\nHere is your link</b>\n{link}",
         reply_markup=reply_markup,
         disable_web_page_preview=True,
     )
