@@ -72,6 +72,7 @@ async def start_command(client: Client, message: Message):
             except BaseException:
                 return
         temp_msg = await message.reply("<code>Tunggu Sebentar...</code>")
+        temp_msg = await message.reply("<code>🕷</code>")
         try:
             messages = await get_messages(client, ids)
         except BaseException:
@@ -149,7 +150,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text="🔆 Refresh!",
+                    text="🔆 reload the Page. . . ",
                     url=f"https://t.me/{client.username}?start={message.command[1]}",
                 )
             ]
@@ -195,6 +196,9 @@ async def send_text(client: Bot, message: Message):
 
         pls_wait = await message.reply(
             "<code>Broadcasting Message Tunggu Sebentar...</code>"
+        )
+        pls_wait = await message.reply(
+            "<code>⏳</code>"
         )
         for row in query:
             chat_id = int(row[0])
