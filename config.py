@@ -19,7 +19,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "PartnerRoom")
+OWNER = os.environ.get("OWNER", "BLVCKCARD")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "")
@@ -37,7 +37,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.\n\nUntuk lebih jelasnya silahkan Join ke @NegativeRoom</b>",
+    "📣<b> Viral Information Channel</b>\n  ├  🔞 @SitusLink\n  ├  🔞 @InfoColmek\n  ├  🔞 @NegativeRoom\n └  🔞 @VCSTELEGRAM\n\n⁉️  ✘   〘☏〙Contact Admin :〘☏〙\n<a href='https://t.me/BLVCKCARD'></a>  ├  ✘     ║▌│█║▌│ █║▌│█│║▌║\n  └  ✘                  SCANNING",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
