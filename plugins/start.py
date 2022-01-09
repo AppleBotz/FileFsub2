@@ -72,7 +72,7 @@ async def start_command(client: Client, message: Message):
             except BaseException:
                 return
         temp_msg = await message.reply("<code>Tunggu Sebentar...</code>")
-        temp_msg = await message.reply("<code>🕷</code>")
+        temp_msg = await message.reply("🕷")
         try:
             messages = await get_messages(client, ids)
         except BaseException:
@@ -111,7 +111,7 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("🌐About me", callback_data="about")],
+            [InlineKeyboardButton("🌐 About me", callback_data="about")],
             [
                 InlineKeyboardButton("📢 Channel", url=client.invitelink),
                 InlineKeyboardButton("💭 Group", url=client.invitelink2),
@@ -142,15 +142,15 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("📢 Channel", url=client.invitelink),
-            InlineKeyboardButton("💭 Group", url=client.invitelink2),
+            InlineKeyboardButton("Channel", url=client.invitelink),
+            InlineKeyboardButton("Group", url=client.invitelink2),
         ],
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text="🔆 reload the Page. . . ",
+                    text="Try Again",
                     url=f"https://t.me/{client.username}?start={message.command[1]}",
                 )
             ]
@@ -198,7 +198,7 @@ async def send_text(client: Bot, message: Message):
             "<code>Broadcasting Message Tunggu Sebentar...</code>"
         )
         pls_wait = await message.reply(
-            "<code>⏳</code>"
+            "⏳"
         )
         for row in query:
             chat_id = int(row[0])
