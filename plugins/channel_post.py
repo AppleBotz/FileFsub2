@@ -18,7 +18,7 @@ from helper_func import encode
     )
 )
 async def channel_post(client: Client, message: Message):
-    reply_text = await message.reply_text("😈", quote=True)
+    reply_text = await message.reply_text("🕸", quote=True)
     try:
         post_message = await message.copy(
             chat_id=client.db_channel.id, disable_notification=True
@@ -41,7 +41,9 @@ async def channel_post(client: Client, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    "🔁 Share Link", url=f"https://telegram.me/share/url?url={link}"
+                    "🔁 Share Link", url=f"https://telegram.me/share/url?url={link}"),
+                InlineKeyboardButton(
+                    "👁‍🗨 Test", url=f"{link}"
                 )
             ]
         ]
