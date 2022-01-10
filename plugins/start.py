@@ -111,7 +111,7 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("𓆩᳦᳣ ᳝ 🦋 about me 🦋 ᳤᳥ ᳝𓆪", callback_data="about")],
+            [InlineKeyboardButton("𓆩᳦᳣ ᳝ 🦋 About me 🦋 ᳤᳥ ᳝𓆪", callback_data="about")],
             [
                 InlineKeyboardButton("⚠️ Channel", url=client.invitelink),
                 InlineKeyboardButton("Group ⚠️", url=client.invitelink2),
@@ -142,15 +142,15 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("Channel", url=client.invitelink),
-            InlineKeyboardButton("Group", url=client.invitelink2),
+            InlineKeyboardButton("•𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=client.invitelink),
+            InlineKeyboardButton("•𝐆𝐫𝐨𝐮𝐩", url=client.invitelink2),
         ],
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text="Try Again",
+                    text="•𝐏𝐥𝐚𝐲 𝐀𝐠𝐚𝐢𝐧?",
                     url=f"https://t.me/{client.username}?start={message.command[1]}",
                 )
             ]
