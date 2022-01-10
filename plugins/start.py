@@ -72,7 +72,7 @@ async def start_command(client: Client, message: Message):
             except BaseException:
                 return
         temp_msg = await message.reply("<code>Tunggu Sebentar...</code>")
-        temp_msg = await message.reply("🕷")
+        temp_msg = await message.reply("😈")
         try:
             messages = await get_messages(client, ids)
         except BaseException:
@@ -150,7 +150,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text="•𝐏𝐥𝐚𝐲 𝐀𝐠𝐚𝐢𝐧?",
+                    text="•𝙿𝚕𝚊𝚢 𝙰𝚐𝚊𝚒𝚗?",
                     url=f"https://t.me/{client.username}?start={message.command[1]}",
                 )
             ]
