@@ -47,7 +47,7 @@
     },
     "START_MESSAGE": {
       "description": "Pesan /start memulai awalan ke bot, Gunakan format parsemode HTML",
-      "value": "📣<b> Viral Information Channel</b>\n  ├  🔞 @SitusLink\n  ├  🔞 @InfoColmek\n  ├  🔞 @Negativeroom\n  └  🔞 @VCSTELEGRAM\n\n⁉️  ✘   〘☏〙Contact Admin :〘☏〙\n<a href='https://t.me/BLVCKCARD'></a>  ├  ✘     ║▌│█║▌│ █║▌│█│║▌║\n  └  ✘                  SCANNING"
+      "value": "📣<b> Viral Information Channel</b>\n  ├  🔞 @SitusLink\n  ├  🔞 @InfoColmek\n  ├  🔞 @Negativeroom\n  └  🔞 @VCSTELEGRAM\n\n⁉️  ✘   〘☏〙Contact Admin :〘☏〙\n<a href='https://t.me/BLVCKCARD'>  ├  ✘     ║▌│█║▌│ █║▌│█│║▌║</a>\n  └  ✘                  SCANNING"
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML",
