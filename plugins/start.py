@@ -71,7 +71,6 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except BaseException:
                 return
-        temp_msg = await message.reply("<code>Tunggu Sebentar...</code>")
         temp_msg = await message.reply("😈")
         try:
             messages = await get_messages(client, ids)
@@ -111,13 +110,13 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("𓆩᳦᳣ ᳝  About me  ᳤᳥ ᳝𓆪", callback_data="about")],
             [
                 InlineKeyboardButton("⚠️ Channel", url=client.invitelink),
                 InlineKeyboardButton("Group ⚠️", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton("🔐 Close ", callback_data="close"),
+                InlineKeyboardButton("🌐 About Me", callback_data="about")
+               InlineKeyboardButton("🔐 Close ", callback_data="close"),
             ],
         ]
         await message.reply_text(
